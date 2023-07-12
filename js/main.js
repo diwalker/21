@@ -66,19 +66,23 @@ document.getElementById('btn-parar').addEventListener('click', () => {
 });
 
 function exibirVideoPerdeu() {
-    const resultadoElemento = document.getElementById('resultado');
-    const videoPerdeu = document.getElementById('video-perdeu');
-    
-    videoPerdeu.style.display = 'block';
-    resultadoElemento.innerText = 'Você perdeu!';
-    desabilitarBotoes();
-  
-    videoPerdeu.style.position = 'fixed';
-    videoPerdeu.style.top = '50%';
-    videoPerdeu.style.left = '50%';
-    videoPerdeu.style.transform = 'translate(-50%, -50%)';
-    videoPerdeu.style.zIndex = '9999';
-    videoPerdeu.play(); 
+  const resultadoElemento = document.getElementById('resultado');
+  const videoPerdeu = document.getElementById('video-perdeu');
+
+  videoPerdeu.style.display = 'block';
+  resultadoElemento.innerText = 'Você perdeu!';
+  desabilitarBotoes();
+
+  videoPerdeu.style.position = 'fixed';
+  videoPerdeu.style.top = '50%';
+  videoPerdeu.style.left = '50%';
+  videoPerdeu.style.transform = 'translate(-50%, -50%)';
+  videoPerdeu.style.zIndex = '9999';
+
+  videoPerdeu.muted = true; // Define o vídeo como mudo
+  videoPerdeu.play(); // Inicia a reprodução automática do vídeo
+}
+
 
 }
   
