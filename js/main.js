@@ -77,9 +77,7 @@ function exibirVideoPerdeu() {
     videoPerdeu.style.top = '50%';
     videoPerdeu.style.left = '50%';
     videoPerdeu.style.transform = 'translate(-50%, -50%)';
-    videoPerdeu.autoplay = true;
     videoPerdeu.style.zIndex = '9999';
-
     videoPerdeu.play(); 
 
 }
